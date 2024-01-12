@@ -1,0 +1,230 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+header {
+  background-color: #42B549;
+  color: #000000;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  padding-left: 10px;
+}
+
+.search-bar {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.search-input {
+  padding: 5px;
+  width: 200px;
+}
+
+.search-button {
+  padding: 5px 10px;
+  background-color: #fff;
+  color: #333;
+  border: none;
+  cursor: pointer;
+}
+
+nav {
+  display: flex;
+}
+
+nav a {
+  margin-left: 15px;
+  text-decoration: none;
+  color: #000000;
+  font-family: 'Roboto', sans-serif;
+  padding: 15px;
+}
+
+.jd {
+  color: #000000;
+  font-size: 9px;
+  padding-left: 30px;
+  padding-top: 30px;
+}
+
+.product-button {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.product-button:hover {
+  transform: scale(1.05);
+}
+
+.product-button img {
+  max-width: 100px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.product-details {
+  padding: 10px;
+}
+
+.product-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.product-description {
+  margin-bottom: 10px;
+}
+
+.buy-button {
+  padding: 8px 16px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+}
+
+.body2 {
+  display: flex;
+  margin: 10px;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f4;
+}
+
+.image-container {
+  display: flex;
+  margin-left: 50px;
+  justify-content: space-between;
+}
+
+.image-container img {
+  width: 100px; /* Sesuaikan ukuran gambar sesuai kebutuhan */
+  height: auto;
+}
+
+/* Menambahkan media query untuk perangkat seluler dengan lebar maksimal 600px */
+@media only screen and (max-width: 600px) {
+
+  header {
+      flex-direction: column;
+      align-items: stretch;
+      height: 120px;
+  }
+
+  .search-bar {
+      margin-top: 10px;
+  }
+
+  nav {
+      align-items: center;
+      display: flex;
+  }
+
+  nav a {
+      margin: 5px 0;
+      display: flex;
+  }
+
+  .body2 {
+      margin-top: 90px;
+      .jd {
+          color: #000000;
+          font-size: 9px;
+          padding-left: 30px;
+          padding-top: 30px;
+      }
+
+      .product-button {
+          display: flex;
+          align-items: center;
+          margin-bottom: 20px;
+          background-color: #fff;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          border: none;
+          cursor: pointer;
+          transition: transform 0.2s ease-in-out;
+      }
+
+      .product-button:hover {
+          transform: scale(1.05);
+      }
+
+      .product-button img {
+          max-width: 100px;
+          height: auto;
+          margin-right: 10px;
+      }
+
+      .product-details {
+          padding: 10px;
+      }
+
+      .product-title {
+          font-size: 18px;
+          font-weight: bold;
+          margin-bottom: 5px;
+      }
+
+      .product-description {
+          margin-bottom: 10px;
+      }
+
+      .buy-button {
+          padding: 8px 16px;
+          background-color: #333;
+          color: #fff;
+          text-decoration: none;
+          text-align: center;
+          display: inline-block;
+      }
+
+      .body2 {
+          display: flex;
+          margin: 10px;
+          justify-content: center;
+          align-items: center;
+          position: absolute;
+          background-color: #f4f4f4;
+          margin-left: 30px;
+      }
+
+      .image-container {
+          display: flex;
+          flex-wrap: wrap;
+          margin-left: 10px;
+          justify-content: space-around;
+      }
+
+      .image-container img {
+          width: 100px; /* Sesuaikan ukuran gambar sesuai kebutuhan */
+          height: auto;
+          margin-bottom: 10px;
+      }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .image-container {
+      margin-left: 0;
+  }
+}
